@@ -14,12 +14,15 @@ $echo -n 'pass' | base64
 ```
 
 * Maintain the ordering :
-```$ kubectl apply -f mongo-secret.yml```
-```$ kubectl apply -f mongo-depl.yaml```
-```$ kubectl apply -f mongo-config.yaml```
-```$ kubectl apply -f mongo-express.yaml```
-```$ kubectl get pod ```
-```$ kubectl logs mongo-express-(some number)```
+
+```$
+$ kubectl apply -f mongo-secret.yml
+$ kubectl apply -f mongo-depl.yaml
+$ kubectl apply -f mongo-config.yaml
+$ kubectl apply -f mongo-express.yaml
+$ kubectl get pod 
+$ kubectl logs mongo-express-(some number)
+```
 
 ```
 | Now You Can See The Server Is Running Message |
