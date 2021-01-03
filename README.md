@@ -8,8 +8,10 @@ Here i have used `Kubernetes` as platform and minikube as tool to spin up the cl
 ```$ minikube start```
 
 * Set username and password for MongoDB Database and that should be base64 because we are using `k8s` `secrets` .
-```$ echo -n 'admin' | base64```
-```$ echo -n 'pass'  | base64```
+```
+$echo -n 'admin' | base64
+$echo -n 'pass' | base64
+```
 
 * Maintain the ordering :
 ```$ kubectl apply -f mongo-secret.yml```
@@ -24,5 +26,7 @@ Here i have used `Kubernetes` as platform and minikube as tool to spin up the cl
 ```
 
 * Exposing our service to external `URL` we have user `loadbalancer type`(Here) :
-```$ kubectl get service```
-```$ minikube service mongo-express-service```
+```
+$ kubectl get service
+$ minikube service mongo-express-service
+```
